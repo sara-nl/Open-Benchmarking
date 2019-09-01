@@ -6,7 +6,7 @@ class TensorFlowBaseTest(rfm.RunOnlyRegressionTest):
     def __init__(self):
         super().__init__()
 
-        self.valid_systems = ['intelinx:remote']
+        self.valid_systems = ['intelinx:remote-nompi']
         self.valid_prog_environs = ['Prg-gnu']
         self.tags = {'experimental','deep learning'}
 
@@ -31,6 +31,9 @@ class TensorFlowBaseTest(rfm.RunOnlyRegressionTest):
 class tensorflowBenchmarkResnetGPU(TensorFlowBaseTest):
     def __init__(self):
         super().__init__()
+
+        self.num_tasks = 1 
+        self.num_cpus_per_task = 12 
 
         self.descr = 'Tensorflow official GPU Benchmark with RESNET-50'
         self.pre_run = ['git clone https://github.com/tensorflow/benchmarks.git']
