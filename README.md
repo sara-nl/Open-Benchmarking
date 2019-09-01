@@ -1,2 +1,3 @@
-# Open Benchmarking
-Open benchmarking effort from SURF Open Innovation Lab
+# benchmarking 
+
+This is the SOIL effort for open and flexible benchmarking effort. 
