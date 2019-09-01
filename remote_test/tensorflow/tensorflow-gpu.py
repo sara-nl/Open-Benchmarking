@@ -2,7 +2,7 @@ import os
 import reframe as rfm
 import reframe.utility.sanity as sn
 
-class TensorFlowBaseTest(rfm.RegressionTest):
+class TensorFlowBaseTest(rfm.RunOnlyRegressionTest):
     def __init__(self):
         super().__init__()
 
@@ -31,7 +31,7 @@ class TensorFlowBaseTest(rfm.RegressionTest):
 class tensorflowBenchmarkResnetGPU(TensorFlowBaseTest):
     def __init__(self):
         super().__init__()
-        
+
         self.descr = 'Tensorflow official GPU Benchmark with RESNET-50'
         self.pre_run = ['git clone https://github.com/tensorflow/benchmarks.git']
         self.executable = 'python benchmarks/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py'
