@@ -1,3 +1,7 @@
-# benchmarking 
+# Open Benchmarking Initiative 
 
-This is the SOIL effort for open and flexible benchmarking effort. 
+This is an effort in **SURF Open InnovationLab** for open and flexible benchmarking effort for experimental computing architectures. We will be using 
+
+<>
+
+ 
