@@ -151,7 +151,8 @@ class ReframeSettings:
                         'EBROOTOPENBLAS' : '/home/sagard/OpenBLAS/build',
                         'LD_LIBRARY_PATH' : '/home/sagard/openmpi-3.1.4/build/lib:$LD_LIBARY_PATH',
                         'PATH' : '/home/sagard/openmpi-3.1.4/build/bin:$PATH',
-                        'CUDAHOME' : '/usr/local/cuda-10.1',
+                        'CUDAHOME' : '/usr/local/cuda'
+                        'LD_LIBRARY_PATH' : '/usr/local/cuda/lib64:$LD_LIBRARY_PATH',
                     }
                 },                
             },

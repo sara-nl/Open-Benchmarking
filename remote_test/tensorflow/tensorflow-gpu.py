@@ -21,6 +21,7 @@ class TensorFlowBaseTest(rfm.RunOnlyRegressionTest):
 			'performance' : (51,-0.1,0.1,'images/second'),
 		    }  
 	    }
+        'intelinx:remote-nompi' : ()
 
     def setup(self, partition, environ, **job_opts):
 		
