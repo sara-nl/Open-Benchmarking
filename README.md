@@ -12,7 +12,7 @@ Currently, we are supporting following benchmarks.
 4. Gromacs
 5. Tensorflow-gpu
 
-We will be adding more benchmarks on the requirement basis. It also depends on the qualitative understanding benchmarks provide for a specofic machine architecture and degree of portability of the benchmark. 
+We will be adding more benchmarks on the requirement basis. It also depends on the qualitative understanding benchmarks provide for a specific machine architecture and degree of portability of the benchmark. 
 
 ### How to use this
 
@@ -24,11 +24,19 @@ Basically there are three simple tests to run the benchmarks
 
 #### Programming Environment
 
+
+
 #### Software Requirements
+
+
 
 #### Changing the configuration file and tests files. 
 
+
+
 ### Running the test
+
+
 
 <> ... more to come
 
