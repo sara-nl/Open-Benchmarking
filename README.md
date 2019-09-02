@@ -32,6 +32,13 @@ Basically there are three simple tests to run the benchmarks
 
 <> ... more to come
 
+### Test systems 
+
+We have been using these tests to benchmark following three systems. 
+
+1. Cartesius (Dutch National Supercomputer)
+2. Intelinx (Experimental system with GPU + FPGA, at **SURFsara**)
+3. EPYDIA (Experimental system at **University of Amsterdam** having epyc Naples + NVIDIA GPUs)
 
 #### Contacts 
 
