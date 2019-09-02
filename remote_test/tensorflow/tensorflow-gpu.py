@@ -17,11 +17,13 @@ class TensorFlowBaseTest(rfm.RunOnlyRegressionTest):
 	    } 
 
         self.reference = {
-		'cartesius:gpu' : {
-			'performance' : (51,-0.1,0.1,'images/second'),
-		    }  
-	    }
-        'intelinx:remote-nompi' : ()
+		    'cartesius:gpu' : {
+			    'performance' : (51,-0.1,0.1,'images/second'),
+		    },  
+            'intelinx:remote-nompi' : {
+                'performance' : (283,-0.1,0.1,'images/second'),
+            }
+        }
 
     def setup(self, partition, environ, **job_opts):
 		
