@@ -20,7 +20,7 @@ Basically there are three simple tests to run the benchmarks
 
 1. Setup the programming environment. 
 2. Install the libraries. 
-3. Change the configuration files and tests files.  
+3. Change the configuration files and design the tests.  
 
 #### Programming Environment
 
