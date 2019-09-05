@@ -14,7 +14,7 @@ class StreamTest(rfm.RegressionTest):
 		self.descr = 'STREAM Benchmark - Array={}'.format(array_size)
 		self.exclusive_access = True
 
-		self.valid_systems = ['epydia:remote','intelinx:remote-nompi']
+		self.valid_systems = ['epydia:remote-nompi','intelinx:remote-nompi']
 		self.valid_prog_environs = ['Prg-gnu']
 
 		self.sourcepath = 'stream.c'

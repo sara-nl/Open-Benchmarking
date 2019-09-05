@@ -8,7 +8,7 @@ class hpltest(rfm.RegressionTest):
 
         self.name = 'HPL'
         self.descr = 'High Performance LinPack for CPUs'
-        self.valid_systems = ['epydia','intelinx:remote']
+        self.valid_systems = ['epydia:remote','intelinx:remote']
         self.valid_prog_environs = ['Prg-gnu']
 
 
@@ -44,6 +44,6 @@ class hpltest(rfm.RegressionTest):
 		}
 		
     def setup(self, partition, environ, **job_opts):
-        self.num_tasks = 12
+        self.num_tasks = 24
         self.variables['OMP_NUM_THREADS'] = str(1)
         super().setup(partition, environ, **job_opts)

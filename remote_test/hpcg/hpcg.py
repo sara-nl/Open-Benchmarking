@@ -9,7 +9,7 @@ class HPCGCheck(rfm.RegressionTest):
         super().__init__()
 
         self.descr = 'HPCG reference benchmark'
-        self.valid_systems = ['epydia','intelinx:remote']
+        self.valid_systems = ['epydia:remote','intelinx:remote']
         self.valid_prog_environs = ['Prg-gnu']
   
         self.prebuild_cmd = ['git clone https://github.com/hpcg-benchmark/hpcg.git',
@@ -23,7 +23,7 @@ class HPCGCheck(rfm.RegressionTest):
         self.executable_opts = ['--nx=104', '--ny=104', '--nz=104', '--rt=600']
         
         self.output_file = sn.getitem(sn.glob('HPCG*.txt'), 0)
-        self.num_tasks = 12
+        self.num_tasks = 24
         self.num_cpus_per_task = 1
 
         self.time_limit = (0,30,0)
