@@ -37,6 +37,7 @@ class tensorflowBenchmarkResnetGPU(TensorFlowBaseTest):
 
         self.num_tasks = 1 
 
+
         self.num_cpus_per_task_dict = {
 			'epydia:remote-nompi': 24,
 			'intelinx:remote':12
@@ -45,7 +46,7 @@ class tensorflowBenchmarkResnetGPU(TensorFlowBaseTest):
         self.descr = 'Tensorflow official GPU Benchmark with RESNET-50'
         self.pre_run = ['git clone https://github.com/tensorflow/benchmarks.git']
         self.executable = 'python benchmarks/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py'
-        self.executable_opts = ['--num_gpus=1 --batch_size=32 --model=resnet50 --variable_update=parameter_server']
+        self.executable_opts = ['--num_gpus=8 --batch_size=32 --model=resnet50 --variable_update=parameter_server']
 	
     def setup(self, partition, environ, **job_opts):
 
