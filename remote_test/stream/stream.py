@@ -27,7 +27,7 @@ class StreamTest(rfm.RegressionTest):
 		self.num_tasks = 1
 		self.num_tasks_per_node = 1
 		self.stream_cpus_per_task = {
-			'epydia:remote': 24,
+			'epydia:remote-nompi': 24,
 			'intelinx:remote-nompi':24
 		}
 

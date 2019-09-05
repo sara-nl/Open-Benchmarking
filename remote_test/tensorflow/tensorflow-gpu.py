@@ -38,7 +38,7 @@ class tensorflowBenchmarkResnetGPU(TensorFlowBaseTest):
         self.num_tasks = 1 
 
         self.num_cpus_per_task_dict = {
-			'epydia:remote': 24,
+			'epydia:remote-nompi': 24,
 			'intelinx:remote':12
 		}
 
