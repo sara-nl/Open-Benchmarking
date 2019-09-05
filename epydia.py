@@ -135,9 +135,9 @@ class ReframeSettings:
                 },
                 'Prg-gnu': {
                     'type': 'ProgEnvironment',
-                    'cc':  'mpicc',
-                    'cxx': 'mpicxx',
-                    'ftn': 'mpifort',
+                    'cc':  'gcc',
+                    'cxx': 'g++',
+                    'ftn': 'gfortran',
                     'variables' : {
                         'EBROOTOPENMPI' : '/home/dkoelma1/sagar/local',
                         'EBROOTOPENBLAS' : '/home/dkoelma1/sagar/local',
