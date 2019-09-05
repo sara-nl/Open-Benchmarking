@@ -11,7 +11,7 @@ class GromacsBaseTestCPU(rfm.RegressionTest):
 
 		# Name of the test and programming environment 
 		self.descr = "Gromacs cpu benchmark for unknown system"
-		self.valid_systems = ['intelinx:remote']
+		self.valid_systems = ['intelinx:remote',]
 		self.valid_prog_environs = ['Prg-gnu']
 		
 		#Source directory 
@@ -27,7 +27,7 @@ class GromacsBaseTestCPU(rfm.RegressionTest):
     							-DCMAKE_C_COMPILER=`which mpicc` \
     							-DCMAKE_CXX_COMPILER=`which mpicxx` \
     							-DGMX_BUILD_OWN_FFTW=on \
-    							-DGMX_SIMD=AVX_512 \
+    							-DGMX_SIMD=AVX2_256 \
     							-DGMX_DOUBLE=off \
     							-DGMX_EXTERNAL_BLAS=off \
     							-DGMX_EXTERNAL_LAPACK=off \
@@ -124,7 +124,7 @@ class GromacsTestGPUBase(rfm.RegressionTest):
 
 		# Name of the test and programming environment 
 		self.descr = "Gromacs gpu benchmark for unknown system"
-		self.valid_systems = ['intelinx:remote']
+		self.valid_systems = ['intelinx:remote','epydia:remote']
 		self.valid_prog_environs = ['Prg-gnu']
 		
 		#Source directory 
@@ -140,7 +140,7 @@ class GromacsTestGPUBase(rfm.RegressionTest):
     							-DCMAKE_C_COMPILER=$EBROOTOPENMPI/bin/mpicc \
     							-DCMAKE_CXX_COMPILER=$EBROOTOPENMPI/bin/mpicxx \
     							-DGMX_BUILD_OWN_FFTW=on \
-    							-DGMX_SIMD=AVX_512 \
+    							-DGMX_SIMD=AVX2_256 \
     							-DGMX_DOUBLE=off \
     							-DGMX_EXTERNAL_BLAS=off \
     							-DGMX_EXTERNAL_LAPACK=off \
@@ -195,11 +195,11 @@ class GromacsGPUTestPrace_2_MPI_task(GromacsTestGPUBase):
 						'tar -xvf GROMACS_TestCaseB.tar.gz']
 
 		self.num_task = {
-			'epydia:remote': 24,
+			'epydia:remote': 6,
 			'intelinx:remote':2
 		}
 		self.openmp_num_threads = {
-			'epydia:remote': 24,
+			'epydia:remote': 4,
 			'intelinx:remote':6
 		}
 

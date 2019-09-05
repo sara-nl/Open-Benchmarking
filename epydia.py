@@ -32,12 +32,18 @@ class ReframeSettings:
                         'environs': ['Prg-gnu'],
                         'descr': 'Login nodes'
                     },
+                    'remote-nompi' : {
+                        'scheduler': 'local',
+                        'modules': [],
+                        'access':  [],
+                        'environs': ['Prg-gnu'],
+                        'descr': 'Login nodes'
+                    }
                 }
             },
             'intelinx': {
                 'descr': 'Test system at SURFsara',
                 'modules_system': None,
-                # Adjust to your system's hostname
                 'hostnames': '',     
                 'partitions': {
                     'login': {

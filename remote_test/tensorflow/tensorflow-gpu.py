@@ -6,9 +6,9 @@ class TensorFlowBaseTest(rfm.RunOnlyRegressionTest):
     def __init__(self):
         super().__init__()
 
-        self.valid_systems = ['intelinx:remote-nompi']
+        self.valid_systems = ['intelinx:remote-nompi','epydia:remote-nompi']
         self.valid_prog_environs = ['Prg-gnu']
-        self.tags = {'experimental','deep learning'}
+        self.tags = {'experimental','deep-learning'}
 
         self.sanity_patterns = sn.assert_found(r'images/sec',self.stdout)
 	
@@ -36,7 +36,11 @@ class tensorflowBenchmarkResnetGPU(TensorFlowBaseTest):
         super().__init__()
 
         self.num_tasks = 1 
-        self.num_cpus_per_task = 12 
+
+        self.num_cpus_per_task_dict = {
+			'epydia:remote': 24,
+			'intelinx:remote':12
+		}
 
         self.descr = 'Tensorflow official GPU Benchmark with RESNET-50'
         self.pre_run = ['git clone https://github.com/tensorflow/benchmarks.git']
@@ -44,5 +48,6 @@ class tensorflowBenchmarkResnetGPU(TensorFlowBaseTest):
         self.executable_opts = ['--num_gpus=1 --batch_size=32 --model=resnet50 --variable_update=parameter_server']
 	
     def setup(self, partition, environ, **job_opts):
-		
+
+        self.num_cpus_per_task = self.num_cpus_per_task_dict[partition.fullname]
         super().setup(partition, environ, **job_opts)
