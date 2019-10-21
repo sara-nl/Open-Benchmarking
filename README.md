@@ -11,17 +11,18 @@ Currently, the following benchmarks are included.
 3. Stream (Memory Bandwidth test)
 4. Gromacs (Molecular Dynamics)
 5. Tensorflow-gpu (Deep Learning)
-6. Isogeometric Analysis (Advanced Finite Element Analysis) : https://github.com/gismo/gismo
+6. [Isogeometric Analysis (Advanced Finite Element Analysis)]( https://github.com/gismo/gismo)
 7. QUEST (Simulating quantum circuits on the Supercomputers ) : https://quest.qtechtheory.org
 
 
 ### How to use ? 
 
+
 Basically there are three simple tests to run the benchmarks
 
-1. Setup the programming environment. 
-2. Install the libraries. 
-3. Change the configuration files and run / design the tests.  
+> Setup the programming environment. 
+> Install the libraries.
+> Change the configuration files and run / design the tests. 
 
 #### Programming Environment 
 
