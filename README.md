@@ -2,7 +2,9 @@
 
 This is an effort in [SURF Open InnovationLab](https://www.surf.nl/en/the-surf-cooperative/surf-open-innovation-lab) for open and flexible benchmarking effort for experimental computing architectures. We will be using [Reframe](https://github.com/eth-cscs/reframe), a regression testing framework for HPC systems from [CSCS](https://www.cscs.ch) for this purpose. 
 
-The set of tests are meant to be the minimal set of benchmarks to understand performance characteristics of the at the node level. It can help identify specific bottlenecks and make the way for more specialised benchmarking and testing. These tests are itself complete in a sense that, compilation, execution and extraction of performance numbers are automated once the programming environment and paths are set properly. 
+> The set of tests are meant to be the minimal set of benchmarks to understand performance characteristics of > the at the node level. It can help identify specific bottlenecks and make the way for more specialised     
+> benchmarking and testing. These tests are itself complete in a sense that, compilation, execution and 
+> extraction of performance numbers are automated once the programming environment and paths are set properly. 
 
 Currently, the following benchmarks are included. 
 
@@ -12,17 +14,15 @@ Currently, the following benchmarks are included.
 4. Gromacs (Molecular Dynamics)
 5. Tensorflow-gpu (Deep Learning)
 6. [Isogeometric Analysis (Advanced Finite Element Analysis)]( https://github.com/gismo/gismo)
-7. QUEST (Simulating quantum circuits on the Supercomputers ) : https://quest.qtechtheory.org
+7. [QUEST (Simulating quantum circuits on the Supercomputers )] (https://quest.qtechtheory.org)
 
 
 ### How to use ? 
 
-
 Basically there are three simple tests to run the benchmarks
-
-> Setup the programming environment. 
-> Install the libraries.
-> Change the configuration files and run / design the tests. 
+1. Setup the programming environment. 
+2. Install the libraries.
+3. Change the configuration files and run / design the tests. 
 
 #### Programming Environment 
 
@@ -33,8 +33,8 @@ Basically there are three simple tests to run the benchmarks
 #### Software Requirements
 
 1. OpenBLAS Implementation (GCC OpenBLAS, MKL) 
-    1. GCC OpenBLAS :   https://github.com/xianyi/OpenBLAS
-    2. Intel MKL : https://software.intel.com/en-us/mkl
+    1. [GCC OpenBLAS] (https://github.com/xianyi/OpenBLAS)
+    2. [Intel MKL] (https://software.intel.com/en-us/mkl)
 
 #### Changing the configuration file and tests files. 
 
