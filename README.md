@@ -38,19 +38,17 @@ Basically there are three simple tests to run the benchmarks
 
 #### Changing the configuration file and tests files. 
 
-
+The `Reframe` scripts and configration files work with python and they try to emulate submission of job via a resource manager on a supercomputer (e.g SLURM) or local job submission. The test and configuration files are itself meant to be scalable and easy for extension. 
 
 ### Running the test
 
-
-
-<> ... more to come
+<description of the test>
 
 ### Test systems 
 
-We have been using these tests to benchmark following three systems. 
+The benchmark work on the following three systems. 
 
-1. Cartesius (Dutch National Supercomputer)
+1. Cartesius nodes (Dutch National Supercomputer)
 2. Intelinx (Experimental system with GPU + FPGA, at **SURFsara, Amsterdam**)
 3. EPYDIA (Experimental system at **University of Amsterdam** : EPYC Naples + NVIDIA GPUs)
 
