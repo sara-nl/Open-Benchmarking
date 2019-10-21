@@ -1,4 +1,4 @@
-## Open Benchmarking Initiative 
+## Open Benchmarking Initiative - SURF
 
 This is an effort in [SURF Open Innovation Lab](https://www.surf.nl/en/the-surf-cooperative/surf-open-innovation-lab) for open and flexible benchmarking effort for experimental computing architectures. We will be using [Reframe](https://github.com/eth-cscs/reframe), a regression testing framework for HPC systems from [CSCS](https://www.cscs.ch) for this purpose. 
 
@@ -10,7 +10,7 @@ This is an effort in [SURF Open Innovation Lab](https://www.surf.nl/en/the-surf-
 Currently, the following benchmarks are included. 
 
 1. HPL (High Performance LinPack)
-2. HPCG (High Performance Conjugate Gradient)
+2. HPCG (High Performance Conjugate Gradient)s
 3. Stream (Memory Bandwidth test)
 4. Gromacs (Molecular Dynamics)
 5. Tensorflow-gpu (Deep Learning)
