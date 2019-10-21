@@ -16,7 +16,7 @@ class IGABaseTestCPU(rfm.RegressionTest):
         self.prebuild_cmd = ['git clone https://github.com/gismo/gismo',
                             'cd gismo',
                             'mkdir build',
-                            'cd build'
+                            'cd build',
                             'cmake .. -DGISMO_WITH_OPENMP=ON'
                             'make poisson2_example'
                             ]
