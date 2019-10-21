@@ -22,8 +22,9 @@ class IGABaseTestCPU(rfm.RegressionTest):
                             ]
 
         self.build_system = 'Make'
+        self.build_system.options = ['poisson2_example']
         self.build_system.max_concurrency = 12
-        self.build_system.flags_from_environ = 'poisson2_example'
+        self.build_system.flags_from_environ = False
 
         self.executable = 'bin/poisson2_example'
 
