@@ -30,7 +30,7 @@ Basically there are three simple steps to run the benchmarks
 1. C/ C++ Compiler (GCC, Intel, Clang)
 2. MPI Implementation available (**OpenMPI, IntelMPI, MPICH and Mvapich**)
 3. CUDA (Optional)
-4. CMAKE (Version 3.12 or above)
+4. CMake (Version 3.12 or above)
 
 #### Software Requirements
 
