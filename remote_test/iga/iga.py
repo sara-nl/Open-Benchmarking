@@ -31,7 +31,7 @@ class IGABaseTestCPU(rfm.RegressionTest):
         self.time_limit = (2,0,0)
 
         self.sanity_patterns = sn.all([
-			sn.assert_found(r'Done', self.output_file)])
+			sn.assert_found(r'Done', self.stdout)])
 
 		#self.perf_patterns = {
 		#	'perf': sn.extractsingle(r'Performance:\s+(?P<perf>\S+)', self.stderr, 'perf', float)
