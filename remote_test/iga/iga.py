@@ -50,7 +50,7 @@ class IGATestPoisson(IGABaseTestCPU):
 	def __init__(self):
 		super().__init__()
 
-		self.executable_opts = ['-r 8 -e 19']
+		self.executable_opts = ['-r 6 -e 15']
 
 	def setup(self, partition, environ, **job_opts):
 
