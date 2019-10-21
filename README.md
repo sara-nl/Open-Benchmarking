@@ -20,7 +20,7 @@ Currently, the following benchmarks are included.
 
 ### How to use ? 
 
-Basically there are three simple tests to run the benchmarks
+Basically there are three simple stpes to run the benchmarks
 1. Setup the programming environment. 
 2. Install the libraries.
 3. Change the configuration files and run / design the tests depending on number of CPU cores. 
@@ -30,6 +30,7 @@ Basically there are three simple tests to run the benchmarks
 1. C/ C++ Compiler (GCC, Intel, Clang)
 2. MPI Implementation available (**OpenMPI, IntelMPI, MPICH and Mvapich**)
 3. CUDA (Optional)
+4. CMAKE (Version 3.12 or above)
 
 #### Software Requirements
 
