@@ -83,8 +83,8 @@ BINdir       = $(TOPdir)/bin
 # used. The variable MPdir is only used for defining MPinc and MPlib.
 #
 MPdir        =  
-MPinc        = -I$(EBROOTOPENMPI)/include
-MPlib        = $(EBROOTOPENMPI)/lib
+MPinc        = -I$(ROOTOPENMPI)/include
+MPlib        = $(ROOTOPENMPI)/lib
 #
 #
 # ----------------------------------------------------------------------

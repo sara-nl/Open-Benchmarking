@@ -2,9 +2,9 @@
 
 This is an effort in [SURF Open InnovationLab](https://www.surf.nl/en/the-surf-cooperative/surf-open-innovation-lab) for open and flexible benchmarking effort for experimental computing architectures. We will be using [Reframe](https://github.com/eth-cscs/reframe), a regression testing framework for HPC systems from [CSCS](https://www.cscs.ch) for this purpose. 
 
-The set of tests are meant to be minimal set of benchmarks to understand first hand performance characteristics of the new system at the node level. It can help indentify specific bottlenecks and make the way for more specialised bechmarking and testing. These tests are itself complete in a sense that, compilation, execution and extraction of performance numbers are automated once the programming envrionment and paths are set properly. 
+The set of tests are meant to be the minimal set of benchmarks to understand performance characteristics of the at the node level. It can help identify specific bottlenecks and make the way for more specialised benchmarking and testing. These tests are itself complete in a sense that, compilation, execution and extraction of performance numbers are automated once the programming environment and paths are set properly. 
 
-Currently, we are supporting following benchmarks. 
+Currently, the following benchmarks are included. 
 
 1. HPL (High Performance LinPack)
 2. HPCG (High Performance Conjugate Gradient)
@@ -12,11 +12,10 @@ Currently, we are supporting following benchmarks.
 4. Gromacs (Molecular Dynamics)
 5. Tensorflow-gpu (Deep Learning)
 6. Isogeometric Analysis (Advanced Finite Element Analysis) : https://github.com/gismo/gismo
-7. QUEST (Simulating quantum circuits on a supercomputers ) : https://quest.qtechtheory.org
+7. QUEST (Simulating quantum circuits on the Supercomputers ) : https://quest.qtechtheory.org
 
-We will be adding more benchmarks on the requirement basis. It also depends on the qualitative understanding the benchmarks provides us for a specific machine architecture and degree of portability and easy of use of the benchmark. 
 
-### How to use this
+### How to use ? 
 
 Basically there are three simple tests to run the benchmarks
 
@@ -24,7 +23,7 @@ Basically there are three simple tests to run the benchmarks
 2. Install the libraries. 
 3. Change the configuration files and run / design the tests.  
 
-#### Programming Environment
+#### Programming Environment 
 
 1. C/ C++ Compiler (GCC, Intel, Clang)
 2. MPI Implementation available (**OpenMPI, IntelMPI, MPICH and Mvapich**)
@@ -40,9 +39,21 @@ Basically there are three simple tests to run the benchmarks
 
 The `Reframe` scripts and configration files work with python and they try to emulate submission of job via a resource manager on a supercomputer (e.g SLURM) or local job submission. The test and configuration files are itself meant to be scalable and easy for extension. 
 
+There are few environment variable which needs to be specified before running the test in the config file. 
+
+1. `ROOTOPENMPI`
+2. `ROOTOPENBLAS`
+3. `CUDAHOME`
+4. `LD_LIBRARY_PATH` : to make libraries available in the path while executing the application. 
+
 ### Running the test
 
-<description of the test>
+1. Make a virtual environment with Python >= 3.5. 
+2. git clone this repository 
+
+#### Run this command 
+
+**`./path to/reframe.py --config-file /path/to/configuration file  --checkpath /path/to/tests --recursive -r --performance-report --exec-policy async --system <name of your system> -t "<name of the tag if any> --partition <your logical partition>`**
 
 ### Test systems 
 

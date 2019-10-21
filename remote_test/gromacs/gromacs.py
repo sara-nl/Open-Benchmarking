@@ -137,8 +137,8 @@ class GromacsTestGPUBase(rfm.RegressionTest):
 							    -DBUILD_SHARED_LIBS=off \
     							-DBUILD_TESTING=off \
     							-DREGRESSIONTEST_DOWNLOAD=OFF \
-    							-DCMAKE_C_COMPILER=$EBROOTOPENMPI/bin/mpicc \
-    							-DCMAKE_CXX_COMPILER=$EBROOTOPENMPI/bin/mpicxx \
+    							-DCMAKE_C_COMPILER=$ROOTOPENMPI/bin/mpicc \
+    							-DCMAKE_CXX_COMPILER=$ROOTOPENMPI/bin/mpicxx \
     							-DGMX_BUILD_OWN_FFTW=on \
     							-DGMX_SIMD=AVX2_256 \
     							-DGMX_DOUBLE=off \

@@ -85,8 +85,8 @@ class ReframeSettings:
                     'cxx': 'g++',
                     'ftn': 'gfortran',
                     'variables' : {
-                        'EBROOTOPENMPI' : '/home/dkoelma1/sagar/local',
-                        'EBROOTOPENBLAS' : '/home/dkoelma1/sagar/local',
+                        'ROOTOPENMPI' : '/home/dkoelma1/sagar/local',
+                        'ROOTOPENBLAS' : '/home/dkoelma1/sagar/local',
                         'LD_LIBRARY_PATH' : '/home/dkoelma1/sagard/local/lib:$LD_LIBARY_PATH',
                         'PATH' : '/home/dkoelma1/sagar/local/bin:$PATH',
                         'CUDAHOME' : '/usr/local/cuda-10.0',
@@ -108,10 +108,10 @@ class ReframeSettings:
                     'cxx': 'g++',
                     'ftn': 'gfortran',
                     'variables' : {
-                        'EBROOTOPENMPI' : '/home/dkoelma1/sagar/local',
-                        'EBROOTOPENBLAS' : '/home/dkoelma1/sagar/local',
-                        'LD_LIBRARY_PATH' : '/home/dkoelma1/sagard/local/lib:$LD_LIBARY_PATH',
-                        'PATH' : '/home/dkoelma1/sagar/local/bin:$PATH',
+                        'ROOTOPENMPI' : '/home/sagard/openmpi-3.1.4/build',
+                        'ROOTOPENBLAS' : '/home/sagard/OpenBLAS/build',
+                        'LD_LIBRARY_PATH' : '/home/sagard/openmpi-3.1.4/build/lib:$LD_LIBARY_PATH',
+                        'PATH' : '/home/sagard/openmpi-3.1.4/build/bin:$PATH',
                         'CUDAHOME' : '/usr/local/cuda-10.0',
                         'LD_LIBRARY_PATH' : '/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH',
                         'LD_LIBRARY_PATH' : '/home/dkoelma1/nvidia/7.4.2-CUDA-10.0.130/lib64:$LD_LIBRARY_PATH'

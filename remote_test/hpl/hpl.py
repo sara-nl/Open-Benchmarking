@@ -13,7 +13,7 @@ class hpltest(rfm.RegressionTest):
 
 
         #self.prebuild = ['git clone https://github.com/xianyi/OpenBLAS.git']
-        self.prebuild_cmd = ['echo $EBROOTOPENMPI',
+        self.prebuild_cmd = ['echo $ROOTOPENMPI',
                              'wget http://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz',
                              'tar -xvf hpl-2.3.tar.gz',
                              'cp Make.gcc hpl-2.3/',
