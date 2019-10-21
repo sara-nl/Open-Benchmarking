@@ -41,19 +41,21 @@ The `Reframe` scripts and configration files work with python and they try to em
 
 There are few environment variable which needs to be specified before running the test in the config file. 
 
-1. `ROOTOPENMPI`
-2. `ROOTOPENBLAS`
-3. `CUDAHOME`
+1. `ROOTOPENMPI` : Installation directory of MPI library.
+2. `ROOTOPENBLAS` : Installation directory of OpenBLAS. 
+3. `CUDAHOME`: Installation directory of CUDA.
 4. `LD_LIBRARY_PATH` : to make libraries available in the path while executing the application. 
 
 ### Running the test
 
 1. Make a virtual environment with Python >= 3.5. 
 2. git clone this repository 
+3. Activate the virtual environment
+4. pip install reframe-hpc
 
 #### Run this command 
 
-**`./path to/reframe.py --config-file /path/to/configuration file  --checkpath /path/to/tests --recursive -r --performance-report --exec-policy async --system <name of your system> -t "<name of the tag if any> --partition <your logical partition>`**
+**`reframe --config-file /path/to/configuration file  --checkpath /path/to/tests --recursive -r --performance-report --exec-policy async --system <name of your system> -t "<name of the tag if any> --partition <your logical partition>`**
 
 ### Test systems 
 
