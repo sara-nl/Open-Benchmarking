@@ -14,7 +14,7 @@ Currently, the following benchmarks are included.
 4. Gromacs (Molecular Dynamics)
 5. Tensorflow-gpu (Deep Learning)
 6. [Isogeometric Analysis (Advanced Finite Element Analysis)]( https://github.com/gismo/gismo)
-7. [QUEST (Simulating quantum circuits on the Supercomputers )] (https://quest.qtechtheory.org)
+7. [QUEST (Simulating quantum circuits on the Supercomputers )](https://quest.qtechtheory.org)
 
 
 ### How to use ? 
@@ -33,8 +33,8 @@ Basically there are three simple tests to run the benchmarks
 #### Software Requirements
 
 1. OpenBLAS Implementation (GCC OpenBLAS, MKL) 
-    1. [GCC OpenBLAS] (https://github.com/xianyi/OpenBLAS)
-    2. [Intel MKL] (https://software.intel.com/en-us/mkl)
+    1. [GCC OpenBLAS](https://github.com/xianyi/OpenBLAS)
+    2. [Intel MKL](https://software.intel.com/en-us/mkl)
 
 #### Changing the configuration file and tests files. 
 
