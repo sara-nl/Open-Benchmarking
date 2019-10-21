@@ -15,7 +15,6 @@ Currently, the following benchmarks are included.
 4. Gromacs (Molecular Dynamics)
 5. Tensorflow-gpu (Deep Learning)
 6. [Isogeometric Analysis (Advanced Finite Element Analysis)]( https://github.com/gismo/gismo)
-7. [QUEST (Simulating quantum circuits on the Supercomputers )](https://quest.qtechtheory.org)
 
 
 ### How to use ? 
