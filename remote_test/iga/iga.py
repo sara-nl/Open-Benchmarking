@@ -17,8 +17,7 @@ class IGABaseTestCPU(rfm.RegressionTest):
                             'cd gismo',
                             'mkdir build',
                             'cd build',
-                            'cmake .. -DGISMO_WITH_OPENMP=ON'
-                            'make poisson2_example'
+                            'cmake .. -DGISMO_WITH_OPENMP=ON',
                             ]
 
         self.build_system = 'Make'
