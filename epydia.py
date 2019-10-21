@@ -13,7 +13,7 @@ class ReframeSettings:
         'systems': {
             # AMD EPYC + NVIDIA GPUs
             'epydia': {
-                'descr': 'Test system for das-6',
+                'descr': 'Test system at University of Amsterdam.',
                 'modules_system': None,
                 # Adjust to your system's hostname
                 'hostnames': '',     
@@ -69,62 +69,7 @@ class ReframeSettings:
                     },
                 }
             },
-            'cartesius': {
-                'descr': 'Dutch National Supercomputer',
-                'hostnames': ['int*','tcn*','fcn*','gcn*'],
-                'modules_system': 'tmod4',
-                'prefix': '/home/sagard/reframe/test/Reframe/tests',
-                'stagedir': '/home/sagard/reframe/test/Reframe/staging',
-                'resourcesdir': '/home/sagard/reframe/test/Reframe/resources',
-                'partitions': {
-
-                    'login': {
-                        'scheduler': 'local',
-                        'modules': [],
-                        'access':  [],
-                        'environs': ['PrgEnv-eb-Intel','eb-foss'],
-                        'descr': 'Login nodes'
-                    },
-                    'normal-ivy': {
-                        'descr': 'Thin nodes (Ivybridge)',
-                        'scheduler': 'nativeslurm',
-                        'access':  ['-p normal --constraint=ivy'],
-                        'environs': ['PrgEnv-eb-Intel','eb-foss'],
-                        'max_jobs': 100
-                    },
-                    'normal-haswell': {
-                        'descr': 'Thin nodes (Haswell)',
-                        'scheduler': 'nativeslurm',
-                        'access':  ['-p normal --constraint=haswell'],
-                        'environs': ['PrgEnv-eb-Intel','eb-foss'],
-                        'max_jobs': 100
-                    },
-                    'broadwell': {
-                        'descr': 'Thin nodes (Broadwell)',
-                        'scheduler': 'nativeslurm',
-                        'access':  ['-p broadwell'],
-                        'environs': ['PrgEnv-eb-Intel','eb-foss'],
-                        'max_jobs': 100
-                    },
-                    'fat': {
-                        'descr': 'Fat nodes (Sandybridge)',
-                        'scheduler': 'nativeslurm',
-                        'access':  ['-p fat'],
-                        'environs': ['PrgEnv-eb-Intel','eb-foss'],
-                        'max_jobs': 100
-                    },
-                    'gpu': {
-                        'descr': 'GPU nodes (K40) ',
-                        'scheduler': 'nativeslurm',
-                        'access':  ['-p gpu'],
-                        'environs': ['eb-foss', 'PrgEnv-eb-Intel'],
-                        'max_jobs': 100
-                    },
-		}
-	    }
-
-
-        },
+		},
         'environments': {
             'epydia': {
                 'builtin': {
