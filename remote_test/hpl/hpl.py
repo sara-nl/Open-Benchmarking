@@ -44,6 +44,6 @@ class hpltest(rfm.RegressionTest):
 		}
 		
     def setup(self, partition, environ, **job_opts):
-        self.num_tasks = 24
+        self.num_tasks = 16
         self.variables['OMP_NUM_THREADS'] = str(1)
         super().setup(partition, environ, **job_opts)
