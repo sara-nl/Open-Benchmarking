@@ -23,7 +23,7 @@ Currently, the following benchmarks are included.
 Basically there are three simple tests to run the benchmarks
 1. Setup the programming environment. 
 2. Install the libraries.
-3. Change the configuration files and run / design the tests. 
+3. Change the configuration files and run / design the tests depending on number of CPU cores. 
 
 #### Programming Environment 
 
@@ -71,5 +71,5 @@ The benchmark work on the following three systems.
 
 If you would like to include your test or have any questions regarding the usage or inclusion of the test please do not hesitate to contact us : 
 
-Sagar dolas (sagar.dolas@surfsara.nl)  
+**Sagar dolas** (sagar.dolas@surfsara.nl)  
 Project Lead and HPC Adviser - SURF
