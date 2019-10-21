@@ -1,8 +1,9 @@
 ## Open Benchmarking Initiative 
 
-This is an effort in [SURF Open InnovationLab](https://www.surf.nl/en/the-surf-cooperative/surf-open-innovation-lab) for open and flexible benchmarking effort for experimental computing architectures. We will be using [Reframe](https://github.com/eth-cscs/reframe), a regression testing framework for HPC systems from [CSCS](https://www.cscs.ch) for this purpose. 
+This is an effort in [SURF Open Innovation Lab](https://www.surf.nl/en/the-surf-cooperative/surf-open-innovation-lab) for open and flexible benchmarking effort for experimental computing architectures. We will be using [Reframe](https://github.com/eth-cscs/reframe), a regression testing framework for HPC systems from [CSCS](https://www.cscs.ch) for this purpose. 
 
-> The set of tests are meant to be the minimal set of benchmarks to understand performance characteristics of > the at the node level. It can help identify specific bottlenecks and make the way for more specialised     
+> The set of tests are meant to be the minimal set of benchmarks to understand performance characteristics of
+> the at the node level. It can help identify specific bottlenecks and make the way for more specialised     
 > benchmarking and testing. These tests are itself complete in a sense that, compilation, execution and 
 > extraction of performance numbers are automated once the programming environment and paths are set properly. 
 
@@ -56,7 +57,7 @@ There are few environment variable which needs to be specified before running th
 
 #### Run this command 
 
-**`reframe --config-file /path/to/configuration file  --checkpath /path/to/tests --recursive -r --performance-report --exec-policy async --system <name of your system> -t "<name of the tag if any> --partition <your logical partition>`**
+**`reframe --config-file /path/to/configuration/file  --checkpath /path/to/tests --recursive -r --performance-report --exec-policy async --system <name of your system> -t <name of the tag if any> --partition <your logical partition>`**
 
 ### Test systems 
 
