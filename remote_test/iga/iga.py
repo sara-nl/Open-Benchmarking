@@ -25,7 +25,7 @@ class IGABaseTestCPU(rfm.RegressionTest):
         self.build_system.max_concurrency = 12
         self.build_system.flags_from_environ = False
 
-        self.executable = 'bin/poisson2_example'
+        self.executable = 'gismo/build/bin/poisson2_example'
 
         self.time_limit = (2,0,0)
 
