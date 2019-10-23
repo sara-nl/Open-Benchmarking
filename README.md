@@ -62,7 +62,7 @@ There are few environment variable which needs to be specified before running th
 
 ##### Demo of running test benchmark on system at SURFsara 
 
-[Sample Video](https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9?t=25speed=2&theme=solarized-dark)
+[Sample Video](https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9?t=25speed=5&theme=dark)
 
 ### Test systems 
 
