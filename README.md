@@ -60,6 +60,12 @@ There are few environment variable which needs to be specified before running th
 
 **`reframe --config-file /path/to/configuration/file  --checkpath /path/to/tests --recursive -r --performance-report --exec-policy async --system <name of your system> -t <name of the tag if any> --partition <your logical partition>`**
 
+##### Demo of running on system at SURFsara 
+
+[![asciicast](Reframe Demo)]( https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9)
+
+<a href="https://asciinema.org/a/14?autoplay=1"><img src="https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9" width="836"/></a>
+
 ### Test systems 
 
 The benchmark work on the following three systems. 
