@@ -62,9 +62,8 @@ There are few environment variable which needs to be specified before running th
 
 ##### Demo of running on system at SURFsara 
 
-[![asciicast](Reframe Demo)]( https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9)
 
-<a href="https://asciinema.org/a/14?autoplay=1"><img src="https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9" width="836"/></a>
+<script src="https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9.js" id="asciicast-14" async data-autoplay="true" data-size="big"></script>
 
 ### Test systems 
 
