@@ -63,7 +63,7 @@ There are few environment variable which needs to be specified before running th
 ##### Demo of running on system at SURFsara 
 
 
-<script src="https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9.js" id="asciicast-14" async data-autoplay="true" data-size="big"></script>
+[![asciicast](https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9.png)](https://asciinema.org/a/SZTUIyhw7rcab8AIXdfwAeRr9)
 
 ### Test systems 
 
