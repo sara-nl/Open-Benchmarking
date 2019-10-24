@@ -1,0 +1,171 @@
+Command line: /data/home/sagard/reframe-testing/bin/reframe -C Open-Benchmarking/config/config.py -c Open-Benchmarking/remote_test/ -r -R --exec-policy async --system intelinx --performance-report
+Reframe version: 2.19
+Launched by user: sagard
+Launched on host: daedalus
+Reframe paths
+=============
+    Check prefix      :
+(R) Check search path : 'Open-Benchmarking/remote_test/'
+    Stage dir prefix     : /data/home/sagard/reframe-testing/stage/
+    Output dir prefix    : /data/home/sagard/reframe-testing/output/
+    Perf. logging prefix : /data/home/sagard/reframe-testing/perflogs
+[==========] Running 13 check(s)
+[==========] Started on Wed Oct 23 16:38:16 2019
+
+[----------] started processing GromacsCPUTestPrace (Gromacs cpu benchmark for unknown system)
+[ RUN      ] GromacsCPUTestPrace on intelinx:remote using Prg-gnu
+[----------] finished processing GromacsCPUTestPrace (Gromacs cpu benchmark for unknown system)
+
+[----------] started processing GromacsCPUTestSABS (Gromacs cpu benchmark for unknown system)
+[ RUN      ] GromacsCPUTestSABS on intelinx:remote using Prg-gnu
+[     HOLD ] GromacsCPUTestSABS on intelinx:remote using Prg-gnu
+[----------] finished processing GromacsCPUTestSABS (Gromacs cpu benchmark for unknown system)
+
+[----------] started processing GromacsGPUTestPrace_2_MPI_task (Gromacs gpu benchmark for unknown system)
+[ RUN      ] GromacsGPUTestPrace_2_MPI_task on intelinx:remote using Prg-gnu
+[     HOLD ] GromacsGPUTestPrace_2_MPI_task on intelinx:remote using Prg-gnu
+[----------] finished processing GromacsGPUTestPrace_2_MPI_task (Gromacs gpu benchmark for unknown system)
+
+[----------] started processing GromacsGPUTestPrace_1_MPI_task (Gromacs gpu benchmark for unknown system)
+[ RUN      ] GromacsGPUTestPrace_1_MPI_task on intelinx:remote using Prg-gnu
+[     HOLD ] GromacsGPUTestPrace_1_MPI_task on intelinx:remote using Prg-gnu
+[----------] finished processing GromacsGPUTestPrace_1_MPI_task (Gromacs gpu benchmark for unknown system)
+
+[----------] started processing GromacsGPUTestSABS_2_MPI_task (Gromacs gpu benchmark for unknown system)
+[ RUN      ] GromacsGPUTestSABS_2_MPI_task on intelinx:remote using Prg-gnu
+[     HOLD ] GromacsGPUTestSABS_2_MPI_task on intelinx:remote using Prg-gnu
+[----------] finished processing GromacsGPUTestSABS_2_MPI_task (Gromacs gpu benchmark for unknown system)
+
+[----------] started processing GromacsGPUTestSABS_1_MPI_task (Gromacs gpu benchmark for unknown system)
+[ RUN      ] GromacsGPUTestSABS_1_MPI_task on intelinx:remote using Prg-gnu
+[     HOLD ] GromacsGPUTestSABS_1_MPI_task on intelinx:remote using Prg-gnu
+[----------] finished processing GromacsGPUTestSABS_1_MPI_task (Gromacs gpu benchmark for unknown system)
+
+[----------] started processing HPCGCheck (HPCG reference benchmark)
+[ RUN      ] HPCGCheck on intelinx:remote using Prg-gnu
+[     HOLD ] HPCGCheck on intelinx:remote using Prg-gnu
+[----------] finished processing HPCGCheck (HPCG reference benchmark)
+
+[----------] started processing HPL (High Performance LinPack for CPUs)
+[ RUN      ] HPL on intelinx:remote using Prg-gnu
+[     HOLD ] HPL on intelinx:remote using Prg-gnu
+[----------] finished processing HPL (High Performance LinPack for CPUs)
+
+[----------] started processing IGATestPoisson (IGA CPU benchmark)
+[ RUN      ] IGATestPoisson on intelinx:remote-nompi using Prg-gnu
+[----------] finished processing IGATestPoisson (IGA CPU benchmark)
+
+[----------] started processing stream-80000000 (STREAM Benchmark - Array=80000000)
+[ RUN      ] stream-80000000 on intelinx:remote-nompi using Prg-gnu
+[     HOLD ] stream-80000000 on intelinx:remote-nompi using Prg-gnu
+[----------] finished processing stream-80000000 (STREAM Benchmark - Array=80000000)
+
+[----------] started processing stream-1000000 (STREAM Benchmark - Array=1000000)
+[ RUN      ] stream-1000000 on intelinx:remote-nompi using Prg-gnu
+[     HOLD ] stream-1000000 on intelinx:remote-nompi using Prg-gnu
+[----------] finished processing stream-1000000 (STREAM Benchmark - Array=1000000)
+
+[----------] started processing stream-4000000 (STREAM Benchmark - Array=4000000)
+[ RUN      ] stream-4000000 on intelinx:remote-nompi using Prg-gnu
+[     HOLD ] stream-4000000 on intelinx:remote-nompi using Prg-gnu
+[----------] finished processing stream-4000000 (STREAM Benchmark - Array=4000000)
+
+[----------] started processing tensorflowBenchmarkResnetGPU (Tensorflow official GPU Benchmark with RESNET-50)
+[     FAIL ] tensorflowBenchmarkResnetGPU
+[----------] finished processing tensorflowBenchmarkResnetGPU (Tensorflow official GPU Benchmark with RESNET-50)
+
+[----------] waiting for spawned checks to finish
+[       OK ] IGATestPoisson on intelinx:remote-nompi using Prg-gnu
+[       OK ] stream-4000000 on intelinx:remote-nompi using Prg-gnu
+[       OK ] stream-1000000 on intelinx:remote-nompi using Prg-gnu
+[       OK ] stream-80000000 on intelinx:remote-nompi using Prg-gnu
+[       OK ] GromacsCPUTestPrace on intelinx:remote using Prg-gnu
+[       OK ] HPL on intelinx:remote using Prg-gnu
+[       OK ] HPCGCheck on intelinx:remote using Prg-gnu
+[     FAIL ] GromacsGPUTestSABS_1_MPI_task on intelinx:remote using Prg-gnu
+[       OK ] GromacsGPUTestSABS_2_MPI_task on intelinx:remote using Prg-gnu
+[       OK ] GromacsGPUTestPrace_1_MPI_task on intelinx:remote using Prg-gnu
+[       OK ] GromacsGPUTestPrace_2_MPI_task on intelinx:remote using Prg-gnu
+[       OK ] GromacsCPUTestSABS on intelinx:remote using Prg-gnu
+[----------] all spawned checks have finished
+
+[  FAILED  ] Ran 13 test case(s) from 13 check(s) (2 failure(s))
+[==========] Finished on Wed Oct 23 19:03:08 2019
+
+==============================================================================
+SUMMARY OF FAILURES
+------------------------------------------------------------------------------
+FAILURE INFO for GromacsGPUTestSABS_1_MPI_task
+  * System partition: intelinx:remote
+  * Environment: Prg-gnu
+  * Stage directory: /data/home/sagard/reframe-testing/stage/intelinx/remote/Prg-gnu/GromacsGPUTestSABS_1_MPI_task
+  * Job type: local (id=1094)
+  * Maintainers: []
+  * Failing phase: performance
+  * Reason: performance error: failed to meet reference: perf=7.432, expected 3.364 (l=-inf, u=6.728)
+------------------------------------------------------------------------------
+FAILURE INFO for tensorflowBenchmarkResnetGPU
+  * System partition: None
+  * Environment: None
+  * Stage directory: None
+  * Job type: batch job (id=-1)
+  * Maintainers: []
+  * Failing phase: setup
+  * Reason: unexpected error: 'intelinx:remote-nompi'
+Traceback (most recent call last):
+  File "/data/home/sagard/reframe-testing/lib/python3.6/site-packages/reframe/frontend/executors/__init__.py", line 146, in _safe_call
+    return fn(*args, **kwargs)
+  File "/data/home/sagard/reframe-testing/Open-Benchmarking/remote_test/tensorflow/tensorflow-gpu.py", line 53, in setup
+    self.num_cpus_per_task = self.num_cpus_per_task_dict[partition.fullname]
+KeyError: 'intelinx:remote-nompi'
+
+------------------------------------------------------------------------------
+==============================================================================
+PERFORMANCE REPORT
+------------------------------------------------------------------------------
+GromacsCPUTestPrace
+- intelinx:remote
+   - Prg-gnu
+      * perf: 0.549 ns/day
+------------------------------------------------------------------------------
+GromacsCPUTestSABS
+   - Prg-gnu
+      * perf: 1.543 ns/day
+------------------------------------------------------------------------------
+GromacsGPUTestPrace_2_MPI_task
+   - Prg-gnu
+      * perf: 3.446 ns/day
+------------------------------------------------------------------------------
+GromacsGPUTestPrace_1_MPI_task
+   - Prg-gnu
+      * perf: 3.366 ns/day
+------------------------------------------------------------------------------
+GromacsGPUTestSABS_2_MPI_task
+   - Prg-gnu
+      * perf: 6.334 ns/day
+------------------------------------------------------------------------------
+GromacsGPUTestSABS_1_MPI_task
+   - Prg-gnu
+      * perf: 7.432 ns/day
+------------------------------------------------------------------------------
+HPCGCheck
+   - Prg-gnu
+      * gflops: 14.0744 GFLOPs/s
+------------------------------------------------------------------------------
+HPL
+   - Prg-gnu
+      * perf: 469.13 GFLOPs/s
+------------------------------------------------------------------------------
+stream-80000000
+- intelinx:remote-nompi
+   - Prg-gnu
+      * triad: 96965.3 GB/s
+------------------------------------------------------------------------------
+stream-1000000
+   - Prg-gnu
+      * triad: 183024.2 GB/s
+------------------------------------------------------------------------------
+stream-4000000
+   - Prg-gnu
+      * triad: 151658.4 GB/s
+------------------------------------------------------------------------------
