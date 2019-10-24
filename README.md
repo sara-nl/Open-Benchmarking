@@ -64,6 +64,8 @@ There are few environment variable which needs to be specified before running th
 
 [Sample Video]( https://asciinema.org/a/86v60uu6HnV6i204B1NfDKbMz?t=25speed=10&theme=dark)
 
+*Please navigate to end of the video to see the results*.
+
 ### Test systems 
 
 The benchmark work on the following three systems. 
