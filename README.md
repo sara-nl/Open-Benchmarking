@@ -60,7 +60,7 @@ There are few environment variable which needs to be specified before running th
 
 **`reframe --config-file /path/to/configuration/file  --checkpath /path/to/tests --recursive -r --performance-report --exec-policy async --system <name of your system> -t <name of the tag if any> --partition <your logical partition>`**
 
-##### Demo of running test benchmark on system at SURFsara 
+#### Demo of running test benchmark on one of the systems at SURFsara 
 
 [Sample Video]( https://asciinema.org/a/86v60uu6HnV6i204B1NfDKbMz?t=25speed=10&theme=dark)
 
