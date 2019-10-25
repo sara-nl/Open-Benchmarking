@@ -7,7 +7,7 @@ This is an effort in [SURF Open Innovation Lab](https://www.surf.nl/en/the-surf-
 > benchmarking and testing. These tests are itself complete in a sense that, compilation, execution and 
 > extraction of performance numbers are automated once the programming environment and paths are set properly. 
 
-Currently, the following benchmarks are included. 
+Currently, the following applications benchmarks are included. 
 
 1. HPL (High Performance LinPack)
 2. HPCG (High Performance Conjugate Gradient)s
@@ -17,6 +17,12 @@ Currently, the following benchmarks are included.
 6. [Isogeometric Analysis (Advanced Finite Element Analysis)]( https://github.com/gismo/gismo)
 7. Quantum circuits simulation on classical computers (Coming Soon)
 
+In Future we plan to integrate more library oriented benchmarks for CPUs and GPUs
+
+1. FFTW
+2. MKL 
+3. BLIS 
+4. ScaLapack 
 
 ### How to use ? 
 
