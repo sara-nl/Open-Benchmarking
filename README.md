@@ -68,7 +68,7 @@ There are few environment variable which needs to be specified before running th
 
 #### Demo of running test benchmark on one of the systems at SURFsara 
 
-[Sample Video]( https://asciinema.org/a/86v60uu6HnV6i204B1NfDKbMz?t=25speed=10&theme=dark)
+[![asciicast](https://asciinema.org/a/86v60uu6HnV6i204B1NfDKbMz.svg)](https://asciinema.org/a/86v60uu6HnV6i204B1NfDKbMz)
 
 *Please navigate to end of the video to see the results*.
 
